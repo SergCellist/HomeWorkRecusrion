@@ -16,10 +16,10 @@ if (numberM < 1 || numberN < 1)
     return;
 }
 
-int SummMN(int numM, int numN) // 1,15  
+int SummMN(int numM, int numN) 
 {
    if (numM == numN) return numM;
-  return numM + SummMN(numM + 1, numN);
+  return numM + SummMN(numM + 1, numN);   
 }
 
 int result = SummMN(numberM, numberN);
